@@ -57,8 +57,7 @@ public class FPSListView extends ListView {
 
 <b> mFpsNumFrames (Frames) during deltaTime(ms) = nowTime - mFpsStartTime , so the FPS = mFpsNumFrames/(delta * 10 ^ -3) = mFpsNumFrames * 1000 / delta ##<b/> 
 
-<br/>
-<b>The running screen as below:<b/><br/>
+<b>The running screen as below:<b/>
 
 <br>[In APP]<br/>
 ![image](https://github.com/YomiRY/FPSListView/blob/master/image-folder/fps-2.png)
