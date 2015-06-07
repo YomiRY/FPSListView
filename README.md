@@ -7,7 +7,7 @@ roughly.
 public class FPSListView extends ListView {
     private static final String DEBUG = "FPSListView";
 
-    private Toast fpsToast;
+    private Toast mFpsToast;
     private long mFpsStartTime = -1;
     private long mFpsPrevTime = -1;
      private int mFpsNumFrames;
@@ -19,7 +19,7 @@ public class FPSListView extends ListView {
 
     public FPSListView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        fpsToast = Toast.makeText(context, "", Toast.LENGTH_SHORT);
+        mFpsToast = Toast.makeText(context, "", Toast.LENGTH_SHORT);
     }
 
     private void trackFPS() {
@@ -39,8 +39,8 @@ public class FPSListView extends ListView {
                 mFpsStartTime = nowTime;
                 mFpsNumFrames = 0;
                 Log.d(DEBUG, "FPS = " + fps);
-                fpsToast.setText("FPS: " + fps);
-                fpsToast.show();
+                mFpsToast.setText("FPS: " + fps);
+                mFpsToast.show();
             }
         }
     }
