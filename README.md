@@ -10,7 +10,7 @@ public class FPSListView extends ListView {
     private Toast mFpsToast;
     private long mFpsStartTime = -1;
     private long mFpsPrevTime = -1;
-     private int mFpsNumFrames;
+    private int mFpsNumFrames;
 
     public FPSListView(Context context) {
         super(context);
